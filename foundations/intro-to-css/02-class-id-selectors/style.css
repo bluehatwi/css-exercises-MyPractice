@@ -1,8 +1,17 @@
-.another_id {
-    background-color: greenyellow;
-    font-weight: bold;
+
+.odd {
+    background-color: pink;
+}
+#only_one {
+    color: blue;
+    font-size: 36px;
+}
+.adjust-font-size {
     font-size: 24px;
 }
-#ayo {
-    background-color: pink;
+#another_id {
+    background-color: greenyellow;
+    font-weight: bold;
+    /*Note that the font size was changed using combining class to this element.
+    */
 }

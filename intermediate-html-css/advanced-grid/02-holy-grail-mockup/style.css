@@ -89,3 +89,71 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* my solution */
+ul {
+  list-style-type: none;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr 0.2fr;
+  gap: 4px;
+}
+
+.container > .header {
+  grid-area: 1 / 1 / 2 / 3;
+  display: grid;
+}
+.header > .logo {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+}
+
+.header > .menu {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: end;
+}
+.header > .menu > ul {
+  display: grid;
+  justify-self: end;
+  gap: 20px;
+  grid-auto-flow: column;
+  margin: 0;
+  padding: 0;
+}
+
+.container > .sidebar {
+  grid-area: 2 / 1 / 4 / 2;
+  display: grid;
+  gap: 50px;
+}
+
+.container > .nav {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.nav > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav > ul > li {
+  text-align: center; 
+}
+
+.container > .article {
+  grid-area: 3 / 2 / 4 / 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.container > .footer {
+  grid-area: 4 / 1 / 4 / 3;
+}

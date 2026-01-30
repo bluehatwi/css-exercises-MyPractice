@@ -157,3 +157,10 @@ ul {
 .container > .footer {
   grid-area: 4 / 1 / 4 / 3;
 }
+
+.photo, .side-content {
+  align-content: center;
+}
+.menu {
+  align-content: center;
+}
